@@ -1,0 +1,655 @@
+<html><head><style>
+body {
+    font: 10pt Georgia, "Times New Roman", Times, serif;
+    line-height: 1.3;
+    margin: .5cm .5cm .5cm 1.5cm;
+}
+.pagebreak {
+    margin-top: 50px;
+}
+.token.atrule, .token.attr-value, .token.class-name, .token.keyword {
+    color: #7114A9;
+    font-weight: bold;
+}
+.token.attr-name, .token.builtin, .token.constant {
+    color: #E90;
+}
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{position:relative;margin:.5em 0;overflow:visible;padding:1px}pre[class*=language-]>code{position:relative;z-index:1;border-left:10px solid #358ccb;box-shadow:-1px 0 0 0 #358ccb,0 0 0 1px #dfdfdf;background-color:#fdfdfd;background-image:linear-gradient(transparent 50%,rgba(69,142,209,.04) 50%);background-size:3em 3em;background-origin:content-box;background-attachment:local}code[class*=language-]{max-height:inherit;height:inherit;padding:0 1em;display:block;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdfdfd;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:1em}:not(pre)>code[class*=language-]{position:relative;padding:.2em;border-radius:.3em;color:#c92c2c;border:1px solid rgba(0,0,0,.1);display:inline;white-space:normal}pre[class*=language-]:after,pre[class*=language-]:before{content:'';display:block;position:absolute;bottom:.75em;left:.18em;width:40%;height:20%;max-height:13em;box-shadow:0 13px 8px #979797;-webkit-transform:rotate(-2deg);-moz-transform:rotate(-2deg);-ms-transform:rotate(-2deg);-o-transform:rotate(-2deg);transform:rotate(-2deg)}pre[class*=language-]:after{right:.75em;left:auto;-webkit-transform:rotate(2deg);-moz-transform:rotate(2deg);-ms-transform:rotate(2deg);-o-transform:rotate(2deg);transform:rotate(2deg)}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#7d8b99}.token.punctuation{color:#5f6364}.token.boolean,.token.constant,.token.deleted,.token.function-name,.token.number,.token.property,.token.symbol,.token.tag{color:#c92c2c}.token.attr-name,.token.builtin,.token.char,.token.function,.token.inserted,.token.selector,.token.string{color:#2f9c0a}.token.entity,.token.operator,.token.url,.token.variable{color:#a67f59;background:rgba(255,255,255,.5)}.token.atrule,.token.attr-value,.token.class-name,.token.keyword{color:#1990b8}.token.important,.token.regex{color:#e90}.language-css .token.string,.style .token.string{color:#a67f59;background:rgba(255,255,255,.5)}.token.important{font-weight:400}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.namespace{opacity:.7}@media screen and (max-width:767px){pre[class*=language-]:after,pre[class*=language-]:before{bottom:14px;box-shadow:none}}pre[class*=language-].line-numbers.line-numbers{padding-left:0}pre[class*=language-].line-numbers.line-numbers code{padding-left:3.8em}pre[class*=language-].line-numbers.line-numbers .line-numbers-rows{left:0}pre[class*=language-][data-line]{padding-top:0;padding-bottom:0;padding-left:0}pre[data-line] code{position:relative;padding-left:4em}pre .line-highlight{margin-top:0}</style></head><body><details><summary>Details</summary><p>lib/application.js</p>
+<p>lib/express.js</p>
+<p>lib/request.js</p>
+<p>lib/response.js</p>
+<p>lib/utils.js</p>
+<p>lib/view.js</p>
+<p>examples/mvc/lib/boot.js</p></details><h2>lib/application.js</h2><pre><code class="language-js"><span class="token comment">/*!
+ * express
+ * Copyright(c) 2009-2013 TJ Holowaychuk
+ * Copyright(c) 2013 Roman Shtylman
+ * Copyright(c) 2014-2015 Douglas Christopher Wilson
+ * MIT Licensed
+ */</span>
+
+<span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Module dependencies.
+ * @private
+ */</span>
+
+<span class="token keyword">var</span> finalhandler <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'finalhandler'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> debug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'debug'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'express:application'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> View <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./view'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'node:http'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> methods <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>methods<span class="token punctuation">;</span>
+<span class="token keyword">var</span> compileETag <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>compileETag<span class="token punctuation">;</span>
+<span class="token keyword">var</span> compileQueryParser <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>compileQueryParser<span class="token punctuation">;</span>
+<span class="token keyword">var</span> compileTrust <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./utils'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>compileTrust<span class="token punctuation">;</span>
+<span class="token keyword">var</span> resolve <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'node:path'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>resolve<span class="token punctuation">;</span>
+<span class="token keyword">var</span> once <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'once'</span><span class="token punctuation">)</span>
+<span class="token keyword">var</span> Router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'router'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Module variables.
+ * @private
+ */</span>
+
+<span class="token keyword">var</span> slice <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>slice<span class="token punctuation">;</span>
+<span class="token keyword">var</span> flatten <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>flat<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Application prototype.
+ */</span>
+
+<span class="token keyword">var</span> app <span class="token operator">=</span> exports <span class="token operator">=</span> module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Variable for trust proxy inheritance back-compat
+ * @private
+ */</span>
+
+<span class="token keyword">var</span> trustProxyDefaultSymbol <span class="token operator">=</span> <span class="token string">'@@symbol:trust_proxy_default'</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Initialize the server.
+ *
+ *   - setup default configuration
+ *   - setup default middleware
+ *   - setup route reflection methods
+ *
+ * @private
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">init</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> router <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span>cache <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>engines <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>settings <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">defaultConfiguration</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// Setup getting to lazily add base router</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token string">'router'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">enumerable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">get</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token function">getrouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>router <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          <span class="token literal-property property">caseSensitive</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enabled</span><span class="token punctuation">(</span><span class="token string">'case sensitive routing'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">strict</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enabled</span><span class="token punctuation">(</span><span class="token string">'strict routing'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token keyword">return</span> router<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Initialize application configuration.
+ * @private
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">defaultConfiguration</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">defaultConfiguration</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> env <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">||</span> <span class="token string">'development'</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// default settings</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enable</span><span class="token punctuation">(</span><span class="token string">'x-powered-by'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'etag'</span><span class="token punctuation">,</span> <span class="token string">'weak'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'env'</span><span class="token punctuation">,</span> env<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'query parser'</span><span class="token punctuation">,</span> <span class="token string">'simple'</span><span class="token punctuation">)</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'subdomain offset'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'trust proxy'</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// trust proxy inherit back-compat</span>
+  Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">,</span> trustProxyDefaultSymbol<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'booting in %s mode'</span><span class="token punctuation">,</span> env<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'mount'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">onmount</span><span class="token punctuation">(</span><span class="token parameter">parent</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// inherit trust proxy</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">[</span>trustProxyDefaultSymbol<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token boolean">true</span>
+      <span class="token operator">&amp;&amp;</span> <span class="token keyword">typeof</span> parent<span class="token punctuation">.</span>settings<span class="token punctuation">[</span><span class="token string">'trust proxy fn'</span><span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">[</span><span class="token string">'trust proxy'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">delete</span> <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">[</span><span class="token string">'trust proxy fn'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// inherit protos</span>
+    Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>request<span class="token punctuation">,</span> parent<span class="token punctuation">.</span>request<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>response<span class="token punctuation">,</span> parent<span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>engines<span class="token punctuation">,</span> parent<span class="token punctuation">.</span>engines<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">,</span> parent<span class="token punctuation">.</span>settings<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// setup locals</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>locals <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// top-most app is mounted at /</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>mountpath <span class="token operator">=</span> <span class="token string">'/'</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// default locals</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>locals<span class="token punctuation">.</span>settings <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">;</span>
+
+  <span class="token comment">// default configuration</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'view'</span><span class="token punctuation">,</span> View<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">,</span> <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'jsonp callback name'</span><span class="token punctuation">,</span> <span class="token string">'callback'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>env <span class="token operator">===</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enable</span><span class="token punctuation">(</span><span class="token string">'view cache'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Dispatch a req, res pair into the application. Starts pipeline processing.
+ *
+ * If no callback is provided, then default error handlers will respond
+ * in the event of an error bubbling through the stack.
+ *
+ * @private
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">handle</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// final handler</span>
+  <span class="token keyword">var</span> done <span class="token operator">=</span> callback <span class="token operator">||</span> <span class="token function">finalhandler</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'env'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">onerror</span><span class="token operator">:</span> <span class="token function">logerror</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// set powered by header</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enabled</span><span class="token punctuation">(</span><span class="token string">'x-powered-by'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">'X-Powered-By'</span><span class="token punctuation">,</span> <span class="token string">'Express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// set circular references</span>
+  req<span class="token punctuation">.</span>res <span class="token operator">=</span> res<span class="token punctuation">;</span>
+  res<span class="token punctuation">.</span>req <span class="token operator">=</span> req<span class="token punctuation">;</span>
+
+  <span class="token comment">// alter the prototypes</span>
+  Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>request<span class="token punctuation">)</span>
+  Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+
+  <span class="token comment">// setup locals</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>res<span class="token punctuation">.</span>locals<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span>locals <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span>router<span class="token punctuation">.</span><span class="token function">handle</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> done<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Proxy `Router#use()` to add middleware to the app router.
+ * See Router#use() documentation for details.
+ *
+ * If the _fn_ parameter is an express app, then it will be
+ * mounted at the _route_ specified.
+ *
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">use</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> path <span class="token operator">=</span> <span class="token string">'/'</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// default path to '/'</span>
+  <span class="token comment">// disambiguate app.use([fn])</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> fn <span class="token operator">!==</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> arg <span class="token operator">=</span> fn<span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arg<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> arg<span class="token punctuation">.</span>length <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      arg <span class="token operator">=</span> arg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// first arg is the path</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> arg <span class="token operator">!==</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      offset <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+      path <span class="token operator">=</span> fn<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> fns <span class="token operator">=</span> <span class="token function">flatten</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">Infinity</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>fns<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">TypeError</span><span class="token punctuation">(</span><span class="token string">'app.use() requires a middleware function'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// get router</span>
+  <span class="token keyword">var</span> router <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>router<span class="token punctuation">;</span>
+
+  fns<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// non-express app</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fn <span class="token operator">||</span> <span class="token operator">!</span>fn<span class="token punctuation">.</span>handle <span class="token operator">||</span> <span class="token operator">!</span>fn<span class="token punctuation">.</span>set<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> router<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'.use app under %s'</span><span class="token punctuation">,</span> path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    fn<span class="token punctuation">.</span>mountpath <span class="token operator">=</span> path<span class="token punctuation">;</span>
+    fn<span class="token punctuation">.</span>parent <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// restore .app property on req and res</span>
+    router<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token function">mounted_app</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> orig <span class="token operator">=</span> req<span class="token punctuation">.</span>app<span class="token punctuation">;</span>
+      fn<span class="token punctuation">.</span><span class="token function">handle</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>req<span class="token punctuation">,</span> orig<span class="token punctuation">.</span>request<span class="token punctuation">)</span>
+        Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> orig<span class="token punctuation">.</span>response<span class="token punctuation">)</span>
+        <span class="token function">next</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// mounted an app</span>
+    fn<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'mount'</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Proxy to the app `Router#route()`
+ * Returns a new `Route` instance for the _path_.
+ *
+ * Routes are isolated middleware stacks for specific paths.
+ * See the Route api docs for details.
+ *
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">route</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">route</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>router<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Register the given template engine callback `fn`
+ * as `ext`.
+ *
+ * By default will `require()` the engine based on the
+ * file extension. For example if you try to render
+ * a "foo.ejs" file Express will invoke the following internally:
+ *
+ *     app.engine('ejs', require('ejs').__express);
+ *
+ * For engines that do not provide `.__express` out of the box,
+ * or if you wish to "map" a different extension to the template engine
+ * you may use this method. For example mapping the EJS template engine to
+ * ".html" files:
+ *
+ *     app.engine('html', require('ejs').renderFile);
+ *
+ * In this case EJS provides a `.renderFile()` method with
+ * the same signature that Express expects: `(path, options, callback)`,
+ * though note that it aliases this method as `ejs.__express` internally
+ * so if you're using ".ejs" extensions you don't need to do anything.
+ *
+ * Some template engines do not follow this convention, the
+ * [Consolidate.js](https://github.com/tj/consolidate.js)
+ * library was created to map all of node's popular template
+ * engines to follow this convention, thus allowing them to
+ * work seamlessly within Express.
+ *
+ * @param {String} ext
+ * @param {Function} fn
+ * @return {app} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">engine</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">engine</span><span class="token punctuation">(</span><span class="token parameter">ext<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> fn <span class="token operator">!==</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'callback function required'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// get file extension</span>
+  <span class="token keyword">var</span> extension <span class="token operator">=</span> ext<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">!==</span> <span class="token string">'.'</span>
+    <span class="token operator">?</span> <span class="token string">'.'</span> <span class="token operator">+</span> ext
+    <span class="token operator">:</span> ext<span class="token punctuation">;</span>
+
+  <span class="token comment">// store engine</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>engines<span class="token punctuation">[</span>extension<span class="token punctuation">]</span> <span class="token operator">=</span> fn<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Proxy to `Router#param()` with one added api feature. The _name_ parameter
+ * can be an array of names.
+ *
+ * See the Router#param() docs for more details.
+ *
+ * @param {String|Array} name
+ * @param {Function} fn
+ * @return {app} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">param</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">param</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> name<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">param</span><span class="token punctuation">(</span>name<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">this</span><span class="token punctuation">.</span>router<span class="token punctuation">.</span><span class="token function">param</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> fn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Assign `setting` to `val`, or return `setting`'s value.
+ *
+ *    app.set('foo', 'bar');
+ *    app.set('foo');
+ *    // => "bar"
+ *
+ * Mounted servers inherit their parent server's settings.
+ *
+ * @param {String} setting
+ * @param {*} [val]
+ * @return {Server} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">set</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token parameter">setting<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// app.get(setting)</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">[</span>setting<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'set "%s" to %o'</span><span class="token punctuation">,</span> setting<span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// set value</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">[</span>setting<span class="token punctuation">]</span> <span class="token operator">=</span> val<span class="token punctuation">;</span>
+
+  <span class="token comment">// trigger matched settings</span>
+  <span class="token keyword">switch</span> <span class="token punctuation">(</span>setting<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">'etag'</span><span class="token operator">:</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'etag fn'</span><span class="token punctuation">,</span> <span class="token function">compileETag</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'query parser'</span><span class="token operator">:</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'query parser fn'</span><span class="token punctuation">,</span> <span class="token function">compileQueryParser</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token string">'trust proxy'</span><span class="token operator">:</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'trust proxy fn'</span><span class="token punctuation">,</span> <span class="token function">compileTrust</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// trust proxy inherit back-compat</span>
+      Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>settings<span class="token punctuation">,</span> trustProxyDefaultSymbol<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">configurable</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">value</span><span class="token operator">:</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Return the app's absolute pathname
+ * based on the parent(s) that have
+ * mounted it.
+ *
+ * For example if the application was
+ * mounted as "/admin", which itself
+ * was mounted as "/blog" then the
+ * return value would be "/blog/admin".
+ *
+ * @return {String}
+ * @private
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">path</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">path</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>parent
+    <span class="token operator">?</span> <span class="token keyword">this</span><span class="token punctuation">.</span>parent<span class="token punctuation">.</span><span class="token function">path</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>mountpath
+    <span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Check if `setting` is enabled (truthy).
+ *
+ *    app.enabled('foo')
+ *    // => false
+ *
+ *    app.enable('foo')
+ *    app.enabled('foo')
+ *    // => true
+ *
+ * @param {String} setting
+ * @return {Boolean}
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">enabled</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">enabled</span><span class="token punctuation">(</span><span class="token parameter">setting</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>setting<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Check if `setting` is disabled.
+ *
+ *    app.disabled('foo')
+ *    // => true
+ *
+ *    app.enable('foo')
+ *    app.disabled('foo')
+ *    // => false
+ *
+ * @param {String} setting
+ * @return {Boolean}
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">disabled</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">disabled</span><span class="token punctuation">(</span><span class="token parameter">setting</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>setting<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Enable `setting`.
+ *
+ * @param {String} setting
+ * @return {app} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">enable</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">enable</span><span class="token punctuation">(</span><span class="token parameter">setting</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>setting<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Disable `setting`.
+ *
+ * @param {String} setting
+ * @return {app} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">disable</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">disable</span><span class="token punctuation">(</span><span class="token parameter">setting</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>setting<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Delegate `.VERB(...)` calls to `router.VERB(...)`.
+ */</span>
+
+methods<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">method</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  app<span class="token punctuation">[</span>method<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>method <span class="token operator">===</span> <span class="token string">'get'</span> <span class="token operator">&amp;&amp;</span> arguments<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// app.get(setting)</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">var</span> route <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    route<span class="token punctuation">[</span>method<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>route<span class="token punctuation">,</span> <span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Special-cased "all" method, applying the given route `path`,
+ * middleware, and callback to _every_ HTTP method.
+ *
+ * @param {String} path
+ * @param {Function} ...
+ * @return {app} for chaining
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">all</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">all</span><span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> route <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> methods<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    route<span class="token punctuation">[</span>methods<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>route<span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Render the given view `name` name with `options`
+ * and a callback accepting an error and the
+ * rendered template string.
+ *
+ * Example:
+ *
+ *    app.render('email', { name: 'Tobi' }, function(err, html){
+ *      // ...
+ *    })
+ *
+ * @param {String} name
+ * @param {Object|Function} options or fn
+ * @param {Function} callback
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">render</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> options<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> cache <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>cache<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> done <span class="token operator">=</span> callback<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> engines <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>engines<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> opts <span class="token operator">=</span> options<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> view<span class="token punctuation">;</span>
+
+  <span class="token comment">// support callback function as second arg</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> options <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    done <span class="token operator">=</span> options<span class="token punctuation">;</span>
+    opts <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// merge options</span>
+  <span class="token keyword">var</span> renderOptions <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token operator">...</span><span class="token keyword">this</span><span class="token punctuation">.</span>locals<span class="token punctuation">,</span> <span class="token operator">...</span>opts<span class="token punctuation">.</span>_locals<span class="token punctuation">,</span> <span class="token operator">...</span>opts <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// set .cache unless explicitly provided</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>renderOptions<span class="token punctuation">.</span>cache <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    renderOptions<span class="token punctuation">.</span>cache <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">enabled</span><span class="token punctuation">(</span><span class="token string">'view cache'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// primed cache</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>renderOptions<span class="token punctuation">.</span>cache<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    view <span class="token operator">=</span> cache<span class="token punctuation">[</span>name<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// view</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>view<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> View <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'view'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    view <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">View</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">defaultEngine</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'view engine'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">root</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'views'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">engines</span><span class="token operator">:</span> engines
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>view<span class="token punctuation">.</span>path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> dirs <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>view<span class="token punctuation">.</span>root<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> view<span class="token punctuation">.</span>root<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">1</span>
+        <span class="token operator">?</span> <span class="token string">'directories "'</span> <span class="token operator">+</span> view<span class="token punctuation">.</span>root<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'", "'</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'" or "'</span> <span class="token operator">+</span> view<span class="token punctuation">.</span>root<span class="token punctuation">[</span>view<span class="token punctuation">.</span>root<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">'"'</span>
+        <span class="token operator">:</span> <span class="token string">'directory "'</span> <span class="token operator">+</span> view<span class="token punctuation">.</span>root <span class="token operator">+</span> <span class="token string">'"'</span>
+      <span class="token keyword">var</span> err <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'Failed to lookup view "'</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">'" in views '</span> <span class="token operator">+</span> dirs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      err<span class="token punctuation">.</span>view <span class="token operator">=</span> view<span class="token punctuation">;</span>
+      <span class="token keyword">return</span> <span class="token function">done</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// prime the cache</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>renderOptions<span class="token punctuation">.</span>cache<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cache<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> view<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// render</span>
+  <span class="token function">tryRender</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span> renderOptions<span class="token punctuation">,</span> done<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Listen for connections.
+ *
+ * A node `http.Server` is returned, with this
+ * application (which is a `Function`) as its
+ * callback. If you wish to create both an HTTP
+ * and HTTPS server you may do so with the "http"
+ * and "https" modules as shown here:
+ *
+ *    var http = require('node:http')
+ *      , https = require('node:https')
+ *      , express = require('express')
+ *      , app = express();
+ *
+ *    http.createServer(app).listen(80);
+ *    https.createServer({ ... }, app).listen(443);
+ *
+ * @return {http.Server}
+ * @public
+ */</span>
+
+app<span class="token punctuation">.</span><span class="token function-variable function">listen</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token keyword">var</span> args <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> args<span class="token punctuation">[</span>args<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> done <span class="token operator">=</span> args<span class="token punctuation">[</span>args<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">once</span><span class="token punctuation">(</span>args<span class="token punctuation">[</span>args<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    server<span class="token punctuation">.</span><span class="token function">once</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> done<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>server<span class="token punctuation">,</span> args<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Log error using console.error.
+ *
+ * @param {Error} err
+ * @private
+ */</span>
+
+<span class="token keyword">function</span> <span class="token function">logerror</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* istanbul ignore next */</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'env'</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token string">'test'</span><span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack <span class="token operator">||</span> err<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * Try rendering a view.
+ * @private
+ */</span>
+
+<span class="token keyword">function</span> <span class="token function">tryRender</span><span class="token punctuation">(</span><span class="token parameter">view<span class="token punctuation">,</span> options<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    view<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> callback<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></body></html>

@@ -1,0 +1,18 @@
+
+[[bin]]
+name = "github_repo_print"
+path = "src-rust/main.rs"
+#path = "src-rust/print.rs"
+
+[package]
+name = "github_repo_print"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+git2 = "0.18"
+glob = "0.3"
+indicatif = "0.17"
+syntect = "5.0"
+mime_guess = "2.0"
+serde_json = "1.0"
